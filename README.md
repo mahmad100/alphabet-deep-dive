@@ -106,4 +106,4 @@ and on `28 Sources` in the workbook.
 ## Author
 
 Mohammad Ahmadi
-[ahmadiresearch.com](https://ahmadiresearch.com) · [GitHub](https://github.com/mahmad100)
+[GitHub](https://github.com/mahmad100)
