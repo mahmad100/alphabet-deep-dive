@@ -5,7 +5,9 @@ are assumption-dependent. Use at your own risk.**
 
 My deep dive on Alphabet, October 2026: a presentation, the Excel model behind it, and a Monte Carlo notebook that
 draws the model's uncertain inputs 10,000 times. Prices are as of the October 16, 2026 close ($340.59). Filed
-figures run through the Q2 2026 Form 10-Q; the Q3 2026 results (October 28, 2026) are not reflected.
+figures run through the Q2 2026 Form 10-Q; the Q3 2026 results (October 28, 2026) are not reflected in the model.
+A separate notebook holds the data behind my blog post on those results, "Alphabet After the Print: The Marks Cut
+Both Ways" (October 30, 2026).
 
 ---
 
@@ -16,6 +18,8 @@ alphabet-deep-dive-oct2026.pdf   The presentation, 46 slides.
 alphabet-model-oct2026.xlsx      The model: evidence sheets, a five-year forecast, three-scenario DCF,
                                  reverse DCF, audits, sources and a change log.
 alphabet-monte-carlo.ipynb       The Monte Carlo behind slide 30, with its outputs saved.
+alphabet-after-the-print.ipynb   The Q3 2026 figures, calculations and charts in the blog post, with each figure
+                                 checked against the post.
 engine/engine.py                 A Python replica of the workbook's operating model and DCF, used by the notebook.
 engine/scenarios_lib.py          Input overrides for the engine.
 README.md                        This file.
@@ -74,6 +78,9 @@ Run the cells top to bottom; a full run takes a minute or two. The notebook read
 checks that the engine reproduces the workbook's own results, then draws the inputs. The input distributions are
 my judgments, stated in the notebook. The result describes uncertainty in the inputs around the base case, not
 where the stock will trade.
+
+`alphabet-after-the-print.ipynb` runs on its own with the same packages. Its figures are typed from Alphabet's filed
+quarterly results and the other sources listed in it, so it needs no other file.
 
 ## Sources
 
